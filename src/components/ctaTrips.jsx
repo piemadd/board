@@ -42,7 +42,7 @@ const CTATrips = ({ trips }) => {
 
   trips
     .filter((trip) => {
-      return trip.estimated >= now - 300000;
+      return trip.estimated >= now - 60000;
     })
     .forEach((trip) => {
       if (!tripsByLineAndDirection[`${trip.runNumber}-${trip.runName}`]) {
@@ -50,14 +50,6 @@ const CTATrips = ({ trips }) => {
       }
 
       tripsByLineAndDirection[`${trip.runNumber}-${trip.runName}`].push(trip);
-    });
-
-  const sortedAndFilteredTrips = trips
-    .sort((a, b) => {
-      return a.estimated - b.estimated;
-    })
-    .filter((trip) => {
-      return trip.estimated >= now - 300000;
     });
 
   if (Object.keys(tripsByLineAndDirection).length === 0) {
