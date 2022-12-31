@@ -1,0 +1,93 @@
+div.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--bg);
+  padding: 0 8px;
+}
+
+div.header > * {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+div.header > h2 {
+  font-size: 24px;
+}
+
+main.columnsHolder {
+  padding-right: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--bg);
+}
+
+div.column {
+  flex-grow: 1;
+  min-width: 215px;
+  width: max(calc(100vw / 5), 215px);
+  padding: 0 0 8px 8px;
+  height: auto;
+}
+
+div.column > div.columnHeader {
+  height: 36px;
+  display: flex
+}
+
+div.columnHeader > img {
+  height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+div.columnHeader > h2 {
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.trip {
+  padding: 0 8px 4px 8px;
+  border-top: 1px solid var(--bg);
+}
+
+.trip > h2 {
+  margin-top: -6px;
+  font-weight: 500;
+}
+
+.trip > h3 {
+  margin-top: -12px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+img.logoLeftPad {
+  margin-left: 6px !important;
+}
+
+.train > .columnHeader {
+  background-color: var(--amtrak-deep-blue);
+}
+
+.train > .trip {
+  background-color: var(--metra-blue);
+}
+
+.cta > .columnHeader {
+  background-color: var(--cta-red);
+}
+
+.cta > * {
+  background-color: var(--cta-blue);
+}
+
+.weather > * {
+  background-color: var(--amtrak-heritage-blue);
+}

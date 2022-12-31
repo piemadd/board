@@ -1,0 +1,44 @@
+:root {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+
+  --fg: #fff;
+  --bg: #111;
+  --bg-2: #222;
+  --bg-3: #333;
+
+  --amtrak-blue: #00537e;
+  --amtrak-deep-blue: #003a7b;
+  --amtrak-heritage-blue: #0078b9;
+  --amtrak-red: #ef3824;
+  --amtrak-deep-red: #cf202e;
+  --amtrak-platinum-mist: #cbd1d5;
+  --amtrak-charcoal-grey: #65686b;
+  --amtrak-anthracite-grey: #495153;
+
+  --metra-blue: #0054a4;
+
+  --cta-blue: #0078c1;
+  --cta-red: #d31145;
+
+  color: var(--fg);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+h1, h2, h3, p, b, i {
+  margin: 0;
+  padding: 0;
+}
